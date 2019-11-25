@@ -130,8 +130,12 @@ def sensor_retrieve_page(request, id):
         "sensor_id": int(id),
     })
 
+#---sensor---
 
-
+def sensor_retrieve_page(request, id):
+    return render(request, "pages/sensor/retrieve.html", {
+        'id': id,
+    })
 #---user profile---
 
 
