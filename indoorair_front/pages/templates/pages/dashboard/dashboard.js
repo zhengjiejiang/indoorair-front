@@ -14,7 +14,7 @@ function onGetDashboardOnPageLoad() {
 
        }
      }
-       xhttp.open("GET", "{% url 'dashboard_page' %}", true);
+       xhttp.open("GET", "{{BACKEND_SERVER_ADDRESS}}/api/dashboard", true);
 
        xhttp.send();
 

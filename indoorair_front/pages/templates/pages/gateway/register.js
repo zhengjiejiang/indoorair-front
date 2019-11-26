@@ -15,11 +15,11 @@ function onRegisterClick() {
     }
     else if (this.readyState == 4 && this.status == 201) { // Thisis the callback function
            // Get the string data that the server sent us.
-           window.location.href = "{% url 'registered_page' %}";
+           window.location.href = "{% url 'register_ok_page' %}";
 
        }
    }
-  xhttp.open('POST',"{% url 'register_api' %}", true)
+  xhttp.open('POST',"{{ BACKEND_API_SERVER_ADDRESS }}/api/register", true)
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhttp.send("first_name="+firstName+"&last_name="+lastName+"&email="+email+"&username="+username+"&password="+password);
 }

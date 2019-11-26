@@ -12,12 +12,12 @@ from rest_framework import status, response, views
 
 
 def index_page(request):
-    return render(request, 'pages/index.html', {
+    return render(request, 'pages/homepage/index.html', {
 
     })
 
 def contact_page(request):
-    return render(request, 'pages/contact.html', {
+    return render(request, 'pages/homepage/contact.html', {
 
     })
 
