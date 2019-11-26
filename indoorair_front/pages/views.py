@@ -16,7 +16,7 @@ def index_page(request):
 
     })
 
-def contact(request):
+def contact_page(request):
     return render(request, 'pages/contact.html', {
 
     })
@@ -37,7 +37,7 @@ def register_page(request):
     return render(request, "pages/gateway/register.html", {})
 
 
-def register_success_page(request):
+def register_ok_page(request):
     # STEP 2 - Do something w/ models.
     # ...
 
